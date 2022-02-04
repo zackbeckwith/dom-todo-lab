@@ -17,3 +17,9 @@ reset.addEventListener('click', function(){
   }
   input.value = ""
 })
+
+document.querySelector('ul').addEventListener('click', clickDelete)
+
+function clickDelete(evt) {
+  evt.target.remove();
+}
